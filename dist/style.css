@@ -1,1 +1,105 @@
+/*----------------------------------- HEADER--------------------------------- */
+.longer-header {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
 
+header,
+.jumbotron div:first-child {
+  width: 70%;
+  height: 100px;
+  margin: 0 auto;
+}
+
+nav {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  line-height: 40px;
+}
+
+nav i {
+  color: royalblue;
+}
+
+nav span {
+  color: grey;
+}
+
+nav ul li {
+  display: inline;
+  padding: 0px 10px;
+}
+
+header div:first-of-type img {
+  width: 100%;
+  height: 70%;
+}
+
+header section {
+  height: 50px;
+  display: flex;
+}
+
+header section ul {
+  display: inline-block;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+header section li {
+  display: inline;
+  height: 40px;
+  line-height: 40px;
+}
+
+header section .fa-angle-down {
+  font-size: 15px;
+}
+
+header section h4 {
+  font-weight: normal;
+}
+
+/* ----------------------------JUMBOTRON------------------------------------- */
+.jumbotron {
+  width: 100%;
+  min-height: 600px;
+  background: url("img/bg-painter-home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.jumbotron > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.jumbotron img {
+  margin-top: 50px;
+  width: 25%;
+}
+
+/* -------------------------------------------------------------------------- */
+main div:first-of-type {
+  background-color: green;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

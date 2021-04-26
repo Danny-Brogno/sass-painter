@@ -4,19 +4,21 @@
 .longer-header {
   width: 100%;
   background-color: black;
+  color: white;
 }
 
-header {
+header,
+.jumbotron div:first-child {
   width: 70%;
   height: 100px;
   margin: 0 auto;
-  color: white;
 }
 
 nav {
   height: 50px;
   display: flex;
   justify-content: flex-end;
+  line-height: 40px;
 }
 
 nav i {
@@ -53,6 +55,8 @@ header section ul {
 
 header section li {
   display: inline;
+  height: 40px;
+  line-height: 40px;
 }
 
 header section .fa-angle-down {
@@ -65,14 +69,29 @@ header section h4 {
 
 /* ----------------------------JUMBOTRON------------------------------------- */
 
+// JUMBOTRON'S FIRST DIV HAS WIDTH 70% - SEE LINE 11 oc CSS
+
 .jumbotron {
   width: 100%;
-  min-height: 500px;
-  background-image: url('img/bg-painter-home.jpg');
+  min-height: 600px;
+  background: url('img/bg-painter-home.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  /* debug */
-  background-color: navy;
 }
 
+.jumbotron > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.jumbotron img {
+  margin-top: 50px;
+  width: 25%;
+}
+
+
 /* -------------------------------------------------------------------------- */
+
+main div:first-of-type {
+  @include bg-green;
+}
