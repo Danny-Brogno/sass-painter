@@ -1,14 +1,30 @@
 
-header {
-  width: 70%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+/*----------------------------------- HEADER--------------------------------- */
+
+.longer-header {
+  width: 100%;
+  background-color: black;
 }
 
-header .fa-heart,
-main span {
-  color: red;
+header {
+  width: 70%;
+  height: 100px;
+  margin: 0 auto;
+  color: white;
+}
+
+nav {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav i {
+  color: royalblue;
+}
+
+nav span {
+  color: grey
 }
 
 nav ul li {
@@ -16,32 +32,43 @@ nav ul li {
   padding: 0px 10px;
 }
 
-nav li:hover {
-  background-color: grey;
+header div:first-of-type img {
+  width: 100%;
+  height: 70%;
 }
 
-main,
-footer {
+header section {
+  height: 50px;
   display: flex;
-  justify-content: center;
 }
 
-main {
-  padding: 30px 0px 30px 0px;
-  width: 70%;
-  margin: 0 auto;
+header section ul {
+  display: inline-block;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
 }
 
-footer .fa-windows {
-  position: relative;
-  color: grey;
-  font-size: 50px;
-  animation: windows 1s;
-  animation-iteration-count: infinite;
+header section li {
+  display: inline;
 }
 
-@keyframes windows {
-  0% {top: 0px;}
-  50% {top: 40px;}
-  100% {top: 0px;}
+header section .fa-angle-down {
+  font-size: 15px;
+}
+
+header section h4 {
+  font-weight: normal;
+}
+
+/* ----------------------------JUMBOTRON------------------------------------- */
+
+.jumbotron {
+  width: 100%;
+  min-height: 500px;
+  background-image: url('img/bg-painter-home.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
