@@ -30,3 +30,7 @@ $soul-less-grey: #e8e8e8;
   display: flex;
   flex-direction: column;
 }
+
+@mixin fontRoboto {
+  font-family: 'Roboto', sans-serif;
+}

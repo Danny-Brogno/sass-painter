@@ -112,7 +112,7 @@ header section h4 {
 
 .jumbotron div > div {
   margin-top: 5px;
-  font-family: 'Roboto', sans-serif;
+  @include fontRoboto;
 }
 
 .jumbotron div h3:last-of-type,
@@ -139,7 +139,7 @@ header section h4 {
   border: 2px solid black;
 }
 
-/* -------------------------MAIN--------------------------------------------- */
+/* -------------------------------MAIN--------------------------------------- */
 
 main {
   width: 100%;
@@ -147,26 +147,114 @@ main {
   background-color: $soul-less-grey;
 }
 
-// MAIN'S FIRST DIV HAS WIDTH 70% - SEE LINE 12 of CSS
-
-main div:first-of-type {
-  width: 70%;
-  height: 150px;
-  line-height: 150px;
-  margin: 0 auto;
-  font-size: 25px;
-  font-weight: lighter;
-  font-family: 'Roboto', sans-serif;
-}
-
-main div:first-of-type h2 {
+main h2 {
   text-align: center;
+  height: 100px;
+  line-height: 100px;
+  @include fontRoboto;
+  font-size: 35px;
 }
 
 .three-image-container {
-  @include flex-row;
-  justify-content: center;
   width: 70%;
-  height: 90%;
-  background-color: $aqua;
+  margin: 0 auto;
+  height: 400px;
+  @include flex-row;
+  justify-content: space-between;
+}
+
+// ------------------FIRST SQUARE--------------------
+
+.three-image-container div {
+  width: calc((100% / 3) - 20px);
+  height: 100%;
+  background-color: white;
+  text-align: justify;
+  text-justify: inter-word;
+  @include fontRoboto;
+}
+
+.three-image-container div img {
+  width: 100%;
+  height: 50%;
+}
+
+.three-image-container div:nth-child(1) p:first-of-type,
+.three-image-container div:nth-child(1) p:nth-child(3),
+.three-image-container div:nth-child(1) a:last-of-type {
+  margin-left: 30px;
+}
+
+.three-image-container div:nth-child(1) p:first-of-type {
+  padding: 20px 0px 20px 0px;
+  font-weight: bolder;
+}
+
+.three-image-container div:nth-child(1) p:first-of-type span {
+  color: $scottish-blue;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: sans-serif
+}
+
+.three-image-container div:nth-child(1) p:last-of-type {
+  max-width: 270px;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding-bottom: 20px;
+}
+
+.three-image-container div:nth-child(1) a {
+  color: $scottish-blue;
+  font-weight: bold;
+}
+
+// ------------------SECOND SQUARE--------------------
+
+.three-image-container div:nth-child(2) p:first-of-type,
+.three-image-container div:nth-child(2) p:nth-child(3),
+.three-image-container div:nth-child(2) a:last-of-type {
+  margin-left: 30px;
+}
+
+.three-image-container div:nth-child(2) p:first-of-type {
+  padding: 20px 0px 20px 0px;
+  font-weight: bolder;
+}
+
+.three-image-container div:nth-child(2) p:last-of-type {
+  max-width: 310px;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding-bottom: 20px;
+}
+
+.three-image-container div:nth-child(2) a {
+  color: $scottish-blue;
+  font-weight: bold;
+}
+
+// ----------------- THIRD SQUARE--------------------
+
+.three-image-container div:nth-child(3) p:first-of-type,
+.three-image-container div:nth-child(3) p:nth-child(3),
+.three-image-container div:nth-child(3) a:last-of-type {
+  margin-left: 30px;
+}
+
+.three-image-container div:nth-child(3) p:first-of-type {
+  padding: 20px 0px 20px 0px;
+  font-weight: bolder;
+}
+
+.three-image-container div:nth-child(3) p:last-of-type {
+  max-width: 290px;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding-bottom: 20px;
+}
+
+.three-image-container div:nth-child(3) a {
+  color: $scottish-blue;
+  font-weight: bold;
 }
