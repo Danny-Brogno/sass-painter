@@ -1,0 +1,47 @@
+
+header {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .fa-heart,
+main span {
+  color: red;
+}
+
+nav ul li {
+  display: inline;
+  padding: 0px 10px;
+}
+
+nav li:hover {
+  background-color: grey;
+}
+
+main,
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  padding: 30px 0px 30px 0px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+footer .fa-windows {
+  position: relative;
+  color: grey;
+  font-size: 50px;
+  animation: windows 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes windows {
+  0% {top: 0px;}
+  50% {top: 40px;}
+  100% {top: 0px;}
+}
