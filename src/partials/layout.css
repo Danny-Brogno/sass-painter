@@ -71,6 +71,8 @@ header section h4 {
   background-image: url('img/bg-painter-home.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  /* debug */
+  background-color: navy;
 }
 
 /* -------------------------------------------------------------------------- */
