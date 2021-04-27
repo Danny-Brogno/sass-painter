@@ -15,6 +15,7 @@ header,
 nav {
   height: 50px;
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   line-height: 40px;
 }
@@ -44,6 +45,7 @@ header div:first-of-type img {
 header section {
   height: 50px;
   display: flex;
+  flex-direction: row;
 }
 
 header section ul {
@@ -52,6 +54,7 @@ header section ul {
   margin: 0px;
   padding: 0px;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -154,6 +157,7 @@ main h2 {
   margin: 0 auto;
   height: 400px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -245,6 +249,68 @@ main h2 {
 .three-image-container div:nth-child(3) a {
   color: #0065bd;
   font-weight: bold;
+}
+
+#six-image-container {
+  width: 70%;
+  margin: 0 auto;
+  height: 900px;
+  padding-top: 70px;
+  margin-bottom: 50px;
+}
+
+#six-image-container div {
+  height: calc(100% / 3);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#six-image-container div:first-of-type div:nth-child(1) {
+  width: 50%;
+  height: 100%;
+  background-color: #3c1567;
+}
+
+#six-image-container div:first-of-type div:nth-child(2) {
+  width: 50%;
+  height: 100%;
+  background: url("img/wacom-painter.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#six-image-container div:first-of-type div:nth-child(2) img {
+  height: 90%;
+}
+
+#six-image-container div:nth-child(2) div:nth-child(1) {
+  width: 50%;
+  height: 100%;
+  background: url("img/painter-master.jpg");
+  background-size: 80%;
+}
+
+#six-image-container div:nth-child(2) div:nth-child(2) {
+  width: 50%;
+  height: 100%;
+  background-color: #3c3c3c;
+}
+
+#six-image-container div:last-of-type div:nth-child(1) {
+  width: 50%;
+  height: 100%;
+  background-color: #0072bc;
+}
+
+#six-image-container div:last-of-type div:nth-child(2) {
+  width: 50%;
+  height: 100%;
+  background: url("img/business-education.jpg");
+  background-size: cover;
 }
 
 * {

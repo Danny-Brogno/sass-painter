@@ -19,11 +19,15 @@ $scarlet-red: #ff2400;
 $seashell-grey: #8B8386;
 $weird-fucsia: #c70eb9;
 $soul-less-grey: #e8e8e8;
+$modern-purple: #3c1567;
+$mud-grey: #3c3c3c;
+$other-blue: #0072bc;
 
 // ----------------------------MIX IN-------------------------------------------
 
 @mixin flex-row {
   display: flex;
+  flex-direction: row;
 }
 
 @mixin flex-column {
