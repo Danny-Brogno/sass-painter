@@ -127,8 +127,9 @@ header section h4 {
 
 .jumbotron div:nth-child(5) span:first-of-type,
 #six-image-container div:first-of-type div:nth-child(1) .contenuto span,
-#six-image-container div:last-of-type div:nth-child(1) .contenuto span {
-  padding: 15px 40px;
+#six-image-container div:last-of-type div:nth-child(1) .contenuto span,
+#six-image-container div:nth-child(2) div:nth-child(2) .contenuto span {
+  padding: 10px 30px;
   background-color: black;
   color: white;
   border: 2px solid black;
@@ -136,7 +137,7 @@ header section h4 {
 }
 
 .jumbotron div:nth-child(5) span:last-of-type {
-  padding: 15px 40px;
+  padding: 10px 30px;
   color: black;
   border: 2px solid black;
 }
@@ -268,8 +269,6 @@ main h2 {
   margin: 0 auto;
   height: 900px;
   padding-top: 70px;
-  // debug
-  margin-bottom: 50px;
 }
 
 #six-image-container div {
@@ -295,26 +294,30 @@ main h2 {
 }
 
 #six-image-container div:first-of-type div:nth-child(1) .contenuto,
-#six-image-container div:last-of-type div:nth-child(1) .contenuto {
+#six-image-container div:last-of-type div:nth-child(1) .contenuto,
+#six-image-container div:nth-child(2) div:nth-child(2) .contenuto {
   width: 80%;
   margin: 0 auto;
 }
 
 #six-image-container div:first-of-type div:nth-child(1) .contenuto h4,
-#six-image-container div:last-of-type div:nth-child(1) .contenuto h4 {
-  font-size: 30px;
+#six-image-container div:last-of-type div:nth-child(1) .contenuto h4,
+#six-image-container div:nth-child(2) div:nth-child(2) .contenuto h4 {
+  font-size: 25px;
   font-weight: bold;
-  margin: 20px 0px;
+  margin: 30px 0px;
 }
 
 #six-image-container div:first-of-type div:nth-child(1) .contenuto p,
-#six-image-container div:last-of-type div:nth-child(1) .contenuto p {
+#six-image-container div:last-of-type div:nth-child(1) .contenuto p,
+#six-image-container div:nth-child(2) div:nth-child(2) .contenuto p {
   font-size: 18px;
   margin-bottom: 30px;
 }
 
 #six-image-container div:first-of-type div:nth-child(1) .contenuto span,
-#six-image-container div:last-of-type div:nth-child(1) .contenuto span {
+#six-image-container div:last-of-type div:nth-child(1) .contenuto span,
+#six-image-container div:nth-child(2) div:nth-child(2) .contenuto span {
   background-color: white;
   color: black;
   border: none;
@@ -348,6 +351,7 @@ main h2 {
   width: 50%;
   height: 100%;
   background-color: $mud-grey;
+  @include fontRoboto;
 }
 
 // ------ THIRD LINE-----------
@@ -356,6 +360,7 @@ main h2 {
   width: 50%;
   height: 100%;
   background-color: $other-blue;
+  @include fontRoboto;
 }
 
 #six-image-container div:last-of-type div:nth-child(2) {
@@ -365,4 +370,164 @@ main h2 {
   background-size: cover;
 }
 
-// -----------------------------------------------------------------------------
+// --------------------------- FOOTER ------------------------------------------
+
+footer {
+  @include fontRoboto;
+}
+
+// UPPER FOOTER
+footer div:first-of-type {
+  width: 100%;
+  height: 300px;
+  background-color: $footer-grey;
+}
+// UPPER FOOTER
+footer div:first-of-type section {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  @include flex-row;
+}
+
+// LOWER FOOTER
+footer div:last-of-type {
+  width: 100%;
+  height: 130px;
+  background-color: $footer-black;
+}
+
+// LOWER FOOTER
+footer div:last-of-type section {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  @include flex-row;
+}
+
+// --------------------------- UPPER FOOTER ------------------------------------
+
+// ALL 4 TOGETHER
+footer div:first-of-type section article {
+  width: calc(100% / 4);
+  height: 100%;
+  @include flex-row;
+  justify-content: center;
+  // Cannot put align-items:center because there is one UL with 5 LI instead of 6 like the others
+  // align-items: center;
+}
+
+footer div:first-of-type section article ul {
+  line-height: 200%;
+}
+
+footer div:first-of-type section article ul h3 {
+  margin-top: 40px;
+  color: black;
+}
+
+footer div:first-of-type section article ul p {
+  color: $more-grey;
+}
+
+// --------------------------- MIDDLE SECTION ----------------------------------
+
+footer aside {
+  width: 100%;
+  height: 100px;
+  background-color: $footer-grey;
+}
+
+footer aside article {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  @include flex-row;
+  justify-content: flex-end;
+}
+
+footer aside article i {
+  width: 30px;
+  height: 30px;
+  font-size: 100%;
+  text-align: center;
+}
+
+footer aside article a {
+  height: 30px;
+  margin-right: 5px;
+  color: white;
+}
+
+.fa, .fab, .fad, .fal, .far, .fas {
+  margin-top: 7px;
+}
+
+footer aside article a:first-of-type {
+  background-color: $instagram-pink;
+}
+
+footer aside article a:nth-child(2) {
+  background-color: $facebook-blue;
+}
+
+footer aside article a:nth-child(3) {
+  background-color: $twitter-blue;
+}
+
+footer aside article a:nth-child(4) {
+  background-color: $youtube-red;
+}
+
+footer aside article a:nth-child(5) {
+  background-color: $pintrest-red;
+}
+
+footer aside article a:nth-child(6) {
+  background-color: $wifi-orange;
+}
+
+// --------------------------- LOWER FOOTER ------------------------------------
+
+// ALL TOGETHER
+footer div:last-of-type section div {
+  width: calc(100% / 2);
+  height: 100%;
+  @include flex-row;
+}
+
+// FIRST
+footer div:last-of-type section div:first-of-type {
+  align-items: center;
+  // justify-content: center;
+  background-color: $footer-black;
+}
+// FIRST
+footer figure {
+  margin-right: 30px;
+}
+
+// SECOND
+footer div:last-of-type section div:last-of-type {
+  color: white;
+}
+
+// SECOND
+footer div:last-of-type section div:last-of-type ul {
+  @include flex-row;
+  align-items: center;
+  color: grey;
+}
+
+// SECOND
+footer div:last-of-type section div:last-of-type li {
+  margin-right: 20px;
+}
+
+footer div:last-of-type section div:last-of-type li:nth-child(3) {
+  margin-right: 25px;
+}
+
+footer div:last-of-type section div:last-of-type li:nth-child(4) {
+  color: $soul-less-grey;
+}

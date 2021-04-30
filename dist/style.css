@@ -125,8 +125,9 @@ header section h4 {
 
 .jumbotron div:nth-child(5) span:first-of-type,
 #six-image-container div:first-of-type div:nth-child(1) .contenuto span,
-#six-image-container div:last-of-type div:nth-child(1) .contenuto span {
-  padding: 15px 40px;
+#six-image-container div:last-of-type div:nth-child(1) .contenuto span,
+#six-image-container div:nth-child(2) div:nth-child(2) .contenuto span {
+  padding: 10px 30px;
   background-color: black;
   color: white;
   border: 2px solid black;
@@ -134,7 +135,7 @@ header section h4 {
 }
 
 .jumbotron div:nth-child(5) span:last-of-type {
-  padding: 15px 40px;
+  padding: 10px 30px;
   color: black;
   border: 2px solid black;
 }
@@ -258,7 +259,6 @@ main h2 {
   margin: 0 auto;
   height: 900px;
   padding-top: 70px;
-  margin-bottom: 50px;
 }
 
 #six-image-container div {
@@ -284,26 +284,30 @@ main h2 {
 }
 
 #six-image-container div:first-of-type div:nth-child(1) .contenuto,
-#six-image-container div:last-of-type div:nth-child(1) .contenuto {
+#six-image-container div:last-of-type div:nth-child(1) .contenuto,
+#six-image-container div:nth-child(2) div:nth-child(2) .contenuto {
   width: 80%;
   margin: 0 auto;
 }
 
 #six-image-container div:first-of-type div:nth-child(1) .contenuto h4,
-#six-image-container div:last-of-type div:nth-child(1) .contenuto h4 {
-  font-size: 30px;
+#six-image-container div:last-of-type div:nth-child(1) .contenuto h4,
+#six-image-container div:nth-child(2) div:nth-child(2) .contenuto h4 {
+  font-size: 25px;
   font-weight: bold;
-  margin: 20px 0px;
+  margin: 30px 0px;
 }
 
 #six-image-container div:first-of-type div:nth-child(1) .contenuto p,
-#six-image-container div:last-of-type div:nth-child(1) .contenuto p {
+#six-image-container div:last-of-type div:nth-child(1) .contenuto p,
+#six-image-container div:nth-child(2) div:nth-child(2) .contenuto p {
   font-size: 18px;
   margin-bottom: 30px;
 }
 
 #six-image-container div:first-of-type div:nth-child(1) .contenuto span,
-#six-image-container div:last-of-type div:nth-child(1) .contenuto span {
+#six-image-container div:last-of-type div:nth-child(1) .contenuto span,
+#six-image-container div:nth-child(2) div:nth-child(2) .contenuto span {
   background-color: white;
   color: black;
   border: none;
@@ -335,12 +339,14 @@ main h2 {
   width: 50%;
   height: 100%;
   background-color: #3c3c3c;
+  font-family: "Roboto", sans-serif;
 }
 
 #six-image-container div:last-of-type div:nth-child(1) {
   width: 50%;
   height: 100%;
   background-color: #0072bc;
+  font-family: "Roboto", sans-serif;
 }
 
 #six-image-container div:last-of-type div:nth-child(2) {
@@ -348,6 +354,154 @@ main h2 {
   height: 100%;
   background: url("img/business-education.jpg");
   background-size: cover;
+}
+
+footer {
+  font-family: "Roboto", sans-serif;
+}
+
+footer div:first-of-type {
+  width: 100%;
+  height: 300px;
+  background-color: #ececec;
+}
+
+footer div:first-of-type section {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+footer div:last-of-type {
+  width: 100%;
+  height: 130px;
+  background-color: #1e1e1e;
+}
+
+footer div:last-of-type section {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+footer div:first-of-type section article {
+  width: calc(100% / 4);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer div:first-of-type section article ul {
+  line-height: 200%;
+}
+
+footer div:first-of-type section article ul h3 {
+  margin-top: 40px;
+  color: black;
+}
+
+footer div:first-of-type section article ul p {
+  color: #4d4d4d;
+}
+
+footer aside {
+  width: 100%;
+  height: 100px;
+  background-color: #ececec;
+}
+
+footer aside article {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+footer aside article i {
+  width: 30px;
+  height: 30px;
+  font-size: 100%;
+  text-align: center;
+}
+
+footer aside article a {
+  height: 30px;
+  margin-right: 5px;
+  color: white;
+}
+
+.fa, .fab, .fad, .fal, .far, .fas {
+  margin-top: 7px;
+}
+
+footer aside article a:first-of-type {
+  background-color: #e4405f;
+}
+
+footer aside article a:nth-child(2) {
+  background-color: #3b5998;
+}
+
+footer aside article a:nth-child(3) {
+  background-color: #1da1f2;
+}
+
+footer aside article a:nth-child(4) {
+  background-color: #cd201f;
+}
+
+footer aside article a:nth-child(5) {
+  background-color: #bd081c;
+}
+
+footer aside article a:nth-child(6) {
+  background-color: #ff8d00;
+}
+
+footer div:last-of-type section div {
+  width: calc(100% / 2);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+footer div:last-of-type section div:first-of-type {
+  align-items: center;
+  background-color: #1e1e1e;
+}
+
+footer figure {
+  margin-right: 30px;
+}
+
+footer div:last-of-type section div:last-of-type {
+  color: white;
+}
+
+footer div:last-of-type section div:last-of-type ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: grey;
+}
+
+footer div:last-of-type section div:last-of-type li {
+  margin-right: 20px;
+}
+
+footer div:last-of-type section div:last-of-type li:nth-child(3) {
+  margin-right: 25px;
+}
+
+footer div:last-of-type section div:last-of-type li:nth-child(4) {
+  color: #e8e8e8;
 }
 
 * {
