@@ -125,7 +125,8 @@ header section h4 {
   font-weight: bold;
 }
 
-.jumbotron div:nth-child(5) span:first-of-type {
+.jumbotron div:nth-child(5) span:first-of-type,
+#six-image-container div:first-of-type div:nth-child(1) .contenuto span {
   padding: 15px 40px;
   background-color: black;
   color: white;
@@ -274,6 +275,7 @@ main h2 {
   height: calc(100% / 3);
   width: 100%;
   @include flex-row;
+  color: white;
 }
 
 // ------ FIRST LINE-----------
@@ -282,7 +284,29 @@ main h2 {
   width: 50%;
   height: 100%;
   background-color: $modern-purple;
-  
+  @include fontRoboto;
+  @include flex-column;
+}
+
+#six-image-container div:first-of-type div:nth-child(1) .contenuto {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#six-image-container div:first-of-type div:nth-child(1) .contenuto h4 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+
+#six-image-container div:first-of-type div:nth-child(1) .contenuto p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+#six-image-container div:first-of-type div:nth-child(1) .contenuto span {
+  background-color: white;
+  color: black;
 }
 
 #six-image-container div:first-of-type div:nth-child(2) {
